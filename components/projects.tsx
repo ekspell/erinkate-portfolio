@@ -7,23 +7,31 @@ function ProjectRow({
   project: (typeof PROJECTS)[number];
 }) {
   const isExternal = project.url.startsWith("http");
+  const isComingSoon = project.url === "#";
+
+  const Wrapper = isComingSoon ? "div" : "a";
 
   return (
     <FadeIn>
-      <a
-        href={project.url}
+      <Wrapper
+        {...(!isComingSoon && { href: project.url })}
         className="project-row"
         {...(isExternal && {
           target: "_blank",
           rel: "noopener noreferrer",
         })}
+        {...(isComingSoon && { style: { cursor: "default" } })}
       >
         <div className="project-num">{project.num}</div>
         <div>
           <div className="project-top">
             <h3 className="project-title">
               {project.title}
-              <span className="project-arrow">↗</span>
+              {isComingSoon ? (
+                <span className="project-coming-soon">Coming Soon</span>
+              ) : (
+                <span className="project-arrow">↗</span>
+              )}
             </h3>
             <div
               style={{
