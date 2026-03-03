@@ -61,7 +61,7 @@ function ProjectRow({
             )}
           </div>
         </div>
-      </a>
+      </Wrapper>
     </FadeIn>
   );
 }
