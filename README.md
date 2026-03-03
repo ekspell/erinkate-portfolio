@@ -26,7 +26,7 @@ components/
   nav.tsx       – Fixed nav with scroll behavior
   hero.tsx      – Headline, body, photo
   marquee.tsx   – Client logo scroll
-  projects.tsx  – Case study rows (Publix, Fijord, CirrusMD)
+  projects.tsx  – Case study rows (Publix Pharmacy Refill Prescriptions, Fijord AI, CirrusMD)
   about.tsx     – Quote + bio
   footer.tsx    – CTA + links
   fade-in.tsx   – Scroll reveal wrapper
