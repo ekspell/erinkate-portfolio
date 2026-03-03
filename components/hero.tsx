@@ -13,7 +13,7 @@ export function Hero() {
           </h1>
           <p className="hero-body">
             Senior product designer with 7+ years turning ambiguous problems
-            into shipped software. Now I write the code too — from research and
+            into shipped software. Now I write the code too – from research and
             Figma to production code.
           </p>
           <div className="hero-actions">

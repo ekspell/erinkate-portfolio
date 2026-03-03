@@ -64,7 +64,7 @@ export function Projects() {
       <FadeIn>
         <div className="section-header">
           <h2 className="section-title">Selected Work</h2>
-          <span className="section-meta">2023 — Present</span>
+          <span className="section-meta">2023 – Present</span>
         </div>
         <div className="section-rule" />
       </FadeIn>

@@ -22,19 +22,19 @@ export function About() {
           <FadeIn>
             <p>
               Currently a Senior UX Designer building products for an American
-              tech company from Cascais, Portugal. On the side, I&apos;m
-              building Fijord — an AI-powered product discovery tool for
+              tech company. On the side, I&apos;m
+              building Fijord – an AI-powered product discovery tool for
               startup teams.
             </p>
             <p>
               I believe the best interfaces come from people who understand both
               the pixel and the function call. I use AI tools daily to ship
-              faster — not as a shortcut, but as a multiplier.
+              faster – not as a shortcut, but as a multiplier.
             </p>
             <p>
               Before tech, I taught yoga and pilates and ran therapeutic
               horseback riding programs. I still think about design the way I
-              think about movement — every small adjustment changes the whole
+              think about movement – every small adjustment changes the whole
               experience.
             </p>
           </FadeIn>
