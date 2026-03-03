@@ -3,6 +3,7 @@ import { bodoni, sourceSerif, outfit } from "@/lib/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://erinkate.design"),
   title: "Erin Kate – Design Engineer",
   description:
     "Product designer and design engineer. I design products and then I build them – from research and Figma to production code.",
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
     title: "Erin Kate – Design Engineer",
     description:
       "Product designer and design engineer. I design products and then I build them.",
+    url: "https://erinkate.design",
     type: "website",
   },
   twitter: {
