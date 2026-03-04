@@ -12,7 +12,7 @@ export function Hero() {
             <em>and ship products.</em>
           </h1>
           <p className="hero-body">
-            Senior product designer with 7+ years turning ambiguous problems
+            Product designer with 7+ years turning ambiguous problems
             into shipped software.
           </p>
           <div className="hero-actions">

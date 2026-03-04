@@ -18,18 +18,18 @@ export const PROJECTS: Project[] = [
       'Designing and building an AI-powered product discovery tool that transforms meeting transcripts into evidence-backed tickets. Every ticket maintains a traceable link from user quote to problem to Jira – so when engineering asks "why are we building this?", the PM can point to the source. Built in under two weeks with Next.js and React.',
     tags: ["Next.js", "React", "TypeScript", "AI"],
     metric: { value: "14s", label: "transcript → tickets" },
-    url: "https://ekspell.github.io/fijord-case-study/",
+    url: "/work/fijord",
     num: "01",
   },
   {
-    title: "2.6 to 4.9 Stars",
+    title: "2.4 to 4.9 Stars",
     role: "Solo Product Designer",
     year: "2024",
     description:
       "Redesigning the prescription refill flow for 2M+ Publix Pharmacy app users. The existing flow had tiny touch targets, a disabled submit button with no explanation, and no clear step sequence – users were abandoning refills and calling pharmacists instead. I rebuilt the entire flow, fixing step sequencing, touch targets, and the pharmacy location picker.",
     tags: ["Mobile", "UX Research", "iOS", "Android"],
-    metric: { value: "2.6 → 4.9", label: "App Store rating" },
-    url: "https://ekspell.github.io/publix-case-study/",
+    metric: { value: "2.4 → 4.9", label: "App Store rating" },
+    url: "/work/publix",
     num: "02",
   },
   {

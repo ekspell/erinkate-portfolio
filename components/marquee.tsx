@@ -7,6 +7,7 @@ export function Marquee() {
   return (
     <FadeIn>
       <div className="marquee-wrap">
+        <p className="marquee-eyebrow">Proud to have worked with</p>
         <div className="marquee-track">
           {doubled.map((client, i) => (
             <span key={i} className="marquee-item">

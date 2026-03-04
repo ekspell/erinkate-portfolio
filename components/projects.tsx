@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { PROJECTS } from "@/lib/data";
 import { FadeIn } from "./fade-in";
 
@@ -8,60 +9,82 @@ function ProjectRow({
 }) {
   const isExternal = project.url.startsWith("http");
   const isComingSoon = project.url === "#";
+  const isInternal = !isExternal && !isComingSoon;
 
-  const Wrapper = isComingSoon ? "div" : "a";
+  const content = (
+    <>
+      <div className="project-num">{project.num}</div>
+      <div>
+        <div className="project-top">
+          <h3 className="project-title">
+            {project.title}
+            {isComingSoon ? (
+              <span className="project-coming-soon">Coming Soon</span>
+            ) : (
+              <span className={isInternal ? "project-arrow project-arrow-internal" : "project-arrow"}>{isInternal ? "→" : "↗"}</span>
+            )}
+          </h3>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "baseline",
+              gap: "16px",
+            }}
+          >
+            <span className="project-role">{project.role}</span>
+            <span className="project-year">{project.year}</span>
+          </div>
+        </div>
+        <p className="project-desc">{project.description}</p>
+        <div className="project-meta">
+          <div className="tags">
+            {project.tags.map((tag) => (
+              <span key={tag} className="tag">
+                {tag}
+              </span>
+            ))}
+          </div>
+          {project.metric && (
+            <div>
+              <span className="metric-value">{project.metric.value}</span>{" "}
+              <span className="metric-label">{project.metric.label}</span>
+            </div>
+          )}
+        </div>
+      </div>
+    </>
+  );
+
+  if (isComingSoon) {
+    return (
+      <FadeIn>
+        <div className="project-row" style={{ cursor: "default" }}>
+          {content}
+        </div>
+      </FadeIn>
+    );
+  }
+
+  if (isInternal) {
+    return (
+      <FadeIn>
+        <Link href={project.url} className="project-row">
+          {content}
+        </Link>
+      </FadeIn>
+    );
+  }
 
   return (
     <FadeIn>
-      <Wrapper
-        {...(!isComingSoon && { href: project.url })}
+      <a
+        href={project.url}
         className="project-row"
-        {...(isExternal && {
-          target: "_blank",
-          rel: "noopener noreferrer",
-        })}
-        {...(isComingSoon && { style: { cursor: "default" } })}
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        <div className="project-num">{project.num}</div>
-        <div>
-          <div className="project-top">
-            <h3 className="project-title">
-              {project.title}
-              {isComingSoon ? (
-                <span className="project-coming-soon">Coming Soon</span>
-              ) : (
-                <span className="project-arrow">↗</span>
-              )}
-            </h3>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "baseline",
-                gap: "16px",
-              }}
-            >
-              <span className="project-role">{project.role}</span>
-              <span className="project-year">{project.year}</span>
-            </div>
-          </div>
-          <p className="project-desc">{project.description}</p>
-          <div className="project-meta">
-            <div className="tags">
-              {project.tags.map((tag) => (
-                <span key={tag} className="tag">
-                  {tag}
-                </span>
-              ))}
-            </div>
-            {project.metric && (
-              <div>
-                <span className="metric-value">{project.metric.value}</span>{" "}
-                <span className="metric-label">{project.metric.label}</span>
-              </div>
-            )}
-          </div>
-        </div>
-      </Wrapper>
+        {content}
+      </a>
     </FadeIn>
   );
 }
