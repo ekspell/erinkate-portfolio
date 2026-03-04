@@ -10,7 +10,13 @@ export function Marquee() {
         <div className="marquee-track">
           {doubled.map((client, i) => (
             <span key={i} className="marquee-item">
-              {client} <span className="marquee-dot">◆</span>
+              <img
+                src={client.logo}
+                alt={client.name}
+                className={`marquee-logo${client.large ? " marquee-logo-lg" : ""}${client.small ? " marquee-logo-sm" : ""}`}
+                height={client.large ? 26 : client.small ? 20 : 22}
+              />
+              <span className="marquee-dot">◆</span>
             </span>
           ))}
         </div>

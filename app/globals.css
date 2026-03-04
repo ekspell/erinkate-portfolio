@@ -235,8 +235,6 @@ body { background: var(--white); min-height: 100vh; }
 
 /* ── Marquee ── */
 .marquee-wrap {
-  border-top: 1px solid var(--border-strong);
-  border-bottom: 1px solid var(--border-strong);
   padding: 20px 0;
   overflow: hidden;
   position: relative;
@@ -246,18 +244,29 @@ body { background: var(--white); min-height: 100vh; }
   gap: 48px;
   animation: marquee 25s linear infinite;
   width: max-content;
-  font-family: var(--font-sans);
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--muted);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
 }
 .marquee-item {
   white-space: nowrap;
   display: flex;
   align-items: center;
   gap: 48px;
+}
+.marquee-logo {
+  display: block;
+  height: 22px;
+  width: auto;
+  opacity: 0.4;
+  filter: grayscale(1);
+  transition: opacity 0.3s ease;
+}
+.marquee-logo-sm {
+  height: 20px;
+}
+.marquee-logo-lg {
+  height: 26px;
+}
+.marquee-logo:hover {
+  opacity: 0.7;
 }
 .marquee-dot {
   color: var(--border-strong);

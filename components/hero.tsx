@@ -13,8 +13,7 @@ export function Hero() {
           </h1>
           <p className="hero-body">
             Senior product designer with 7+ years turning ambiguous problems
-            into shipped software. Now I write the code too – from research and
-            Figma to production code.
+            into shipped software.
           </p>
           <div className="hero-actions">
             <a href="#work" className="btn-outline">

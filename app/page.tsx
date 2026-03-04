@@ -1,4 +1,4 @@
-import { Nav, Hero, Marquee, Projects, About, Footer } from "@/components";
+import { Nav, Hero, Marquee, Projects, Footer } from "@/components";
 
 export default function Home() {
   return (
@@ -13,7 +13,6 @@ export default function Home() {
         <Hero />
         <Marquee />
         <Projects />
-        <About />
         <Footer />
       </div>
     </>
