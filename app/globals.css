@@ -235,7 +235,7 @@ body { background: var(--white); min-height: 100vh; }
 
 /* ── Marquee ── */
 .marquee-wrap {
-  padding: 80px 0;
+  padding: 120px 0;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -880,14 +880,24 @@ body { background: var(--white); min-height: 100vh; }
   -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;
 }
-.cs-carousel-hint {
-  font-family: var(--font-sans);
-  font-size: 13px;
-  color: var(--muted);
-  text-align: right;
-  letter-spacing: 0.02em;
-  margin-top: 8px;
+.cs-carousel-wrap {
+  position: relative;
 }
+.cs-carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: var(--muted);
+  z-index: 2;
+  pointer-events: none;
+  line-height: 1;
+  background: rgba(242, 231, 228, 0.8);
+  padding: 8px 4px;
+  border-radius: 2px;
+}
+.cs-carousel-arrow-left { left: 8px; }
+.cs-carousel-arrow-right { right: 8px; }
 .cs-screen-carousel img {
   height: 480px;
   width: auto;

@@ -121,16 +121,19 @@ export default function PublixPage() {
           A cramped, confusing flow that packed everything onto disconnected
           screens with no clear guidance.
         </p>
-        <div className="cs-screen-carousel">
-          <Image
-            src="/work/publix/before.jpg"
-            alt="Original Publix Pharmacy refill flow"
-            width={1920}
-            height={480}
-            style={{ height: 480, width: "auto" }}
-          />
+        <div className="cs-carousel-wrap">
+          <span className="cs-carousel-arrow cs-carousel-arrow-left">‹</span>
+          <div className="cs-screen-carousel">
+            <Image
+              src="/work/publix/before.jpg"
+              alt="Original Publix Pharmacy refill flow"
+              width={1920}
+              height={480}
+              style={{ height: 480, width: "auto" }}
+            />
+          </div>
+          <span className="cs-carousel-arrow cs-carousel-arrow-right">›</span>
         </div>
-        <p className="cs-carousel-hint">Scroll to explore the full flow →</p>
         <p className="cs-image-caption">The original refill experience</p>
       </CaseStudySection>
 
@@ -142,18 +145,22 @@ export default function PublixPage() {
           understand backend constraints.
         </p>
 
-        <div className="cs-screen-carousel">
-          {SCREENS.map((screen) => (
-            <Image
-              key={screen.alt}
-              src={screen.src}
-              alt={screen.alt}
-              width={280}
-              height={480}
-            />
-          ))}
+        <div className="cs-carousel-wrap">
+          <span className="cs-carousel-arrow cs-carousel-arrow-left">‹</span>
+          <div className="cs-screen-carousel">
+            {SCREENS.map((screen) => (
+              <Image
+                key={screen.alt}
+                src={screen.src}
+                alt={screen.alt}
+                width={280}
+                height={480}
+              />
+            ))}
+          </div>
+          <span className="cs-carousel-arrow cs-carousel-arrow-right">›</span>
         </div>
-        <p className="cs-carousel-hint">Scroll to explore the full flow →</p>
+        <p className="cs-image-caption">The redesigned refill experience</p>
       </CaseStudySection>
 
       <CaseStudySection title="Results">
