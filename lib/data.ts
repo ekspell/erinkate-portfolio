@@ -11,7 +11,7 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
-    title: "Fijord AI",
+    title: "Fijord",
     role: "Design & Engineering",
     year: "2026",
     description:
@@ -22,7 +22,7 @@ export const PROJECTS: Project[] = [
     num: "01",
   },
   {
-    title: "Publix Pharmacy Prescriptions",
+    title: "2.6 to 4.9 Stars",
     role: "Solo Product Designer",
     year: "2024",
     description:
@@ -33,7 +33,7 @@ export const PROJECTS: Project[] = [
     num: "02",
   },
   {
-    title: "CirrusMD Chart Basket",
+    title: "The Digital Stacking Method",
     role: "Solo Product Designer",
     year: "2023",
     description:
