@@ -884,20 +884,23 @@ body { background: var(--white); min-height: 100vh; }
   position: relative;
 }
 .cs-carousel-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 18px;
-  color: var(--muted);
-  z-index: 2;
+  font-family: var(--font-sans);
+  font-size: 28px;
+  color: var(--accent);
   pointer-events: none;
   line-height: 1;
-  background: rgba(242, 231, 228, 0.8);
-  padding: 8px 4px;
-  border-radius: 2px;
 }
-.cs-carousel-arrow-left { left: 8px; }
-.cs-carousel-arrow-right { right: 8px; }
+.cs-carousel-caption-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -4px;
+}
+.cs-carousel-caption-row .cs-image-caption {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  margin-top: 0;
+}
 .cs-screen-carousel img {
   height: 480px;
   width: auto;

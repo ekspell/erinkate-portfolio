@@ -122,7 +122,6 @@ export default function PublixPage() {
           screens with no clear guidance.
         </p>
         <div className="cs-carousel-wrap">
-          <span className="cs-carousel-arrow cs-carousel-arrow-left">‹</span>
           <div className="cs-screen-carousel">
             <Image
               src="/work/publix/before.jpg"
@@ -132,9 +131,12 @@ export default function PublixPage() {
               style={{ height: 480, width: "auto" }}
             />
           </div>
-          <span className="cs-carousel-arrow cs-carousel-arrow-right">›</span>
+          <div className="cs-carousel-caption-row">
+            <span className="cs-carousel-arrow">←</span>
+            <p className="cs-image-caption">The original refill experience</p>
+            <span className="cs-carousel-arrow">→</span>
+          </div>
         </div>
-        <p className="cs-image-caption">The original refill experience</p>
       </CaseStudySection>
 
       <CaseStudySection title="The Solution">
@@ -146,7 +148,6 @@ export default function PublixPage() {
         </p>
 
         <div className="cs-carousel-wrap">
-          <span className="cs-carousel-arrow cs-carousel-arrow-left">‹</span>
           <div className="cs-screen-carousel">
             {SCREENS.map((screen) => (
               <Image
@@ -158,9 +159,12 @@ export default function PublixPage() {
               />
             ))}
           </div>
-          <span className="cs-carousel-arrow cs-carousel-arrow-right">›</span>
+          <div className="cs-carousel-caption-row">
+            <span className="cs-carousel-arrow">←</span>
+            <p className="cs-image-caption">The redesigned refill experience</p>
+            <span className="cs-carousel-arrow">→</span>
+          </div>
         </div>
-        <p className="cs-image-caption">The redesigned refill experience</p>
       </CaseStudySection>
 
       <CaseStudySection title="Results">
