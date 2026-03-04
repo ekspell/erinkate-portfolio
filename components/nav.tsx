@@ -35,19 +35,6 @@ export function Nav() {
           >
             Work
           </a>
-          <a
-            href="/about"
-            style={{
-              fontFamily: "var(--font-sans)",
-              fontSize: "12px",
-              fontWeight: 500,
-              color: "var(--muted)",
-              textDecoration: "none",
-              transition: "color 0.3s ease",
-            }}
-          >
-            About
-          </a>
           <a href="mailto:helloerinkate@gmail.com" className="nav-cta">
             Get in touch
           </a>
