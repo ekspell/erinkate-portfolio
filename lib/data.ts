@@ -11,7 +11,7 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
-    title: "Publix Pharmacy Refill Prescriptions",
+    title: "Publix Pharmacy Prescriptions",
     role: "Solo Product Designer",
     year: "2024",
     description:

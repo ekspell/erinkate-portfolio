@@ -7,9 +7,9 @@ export function Hero() {
         <div>
           <p className="hero-label">Product Designer → Design Engineer</p>
           <h1 className="hero-headline">
-            I design products.
+            I research, design,
             <br />
-            <em>Then I write the code.</em>
+            <em>and ship products.</em>
           </h1>
           <p className="hero-body">
             Senior product designer with 7+ years turning ambiguous problems

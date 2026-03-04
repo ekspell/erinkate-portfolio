@@ -21,10 +21,9 @@ export function About() {
         <div className="about-body">
           <FadeIn>
             <p>
-              Currently a Senior UX Designer building products for an American
-              tech company. On the side, I&apos;m
-              building Fijord – an AI-powered product discovery tool for
-              startup teams.
+              Currently a Senior UX Designer at Harpin AI, working with
+              Marriott. On the side, I&apos;m building Fijord, an AI-powered
+              product discovery tool for product teams.
             </p>
             <p>
               I believe the best interfaces come from people who understand both
@@ -32,9 +31,9 @@ export function About() {
               faster – not as a shortcut, but as a multiplier.
             </p>
             <p>
-              Before tech, I taught yoga and pilates and ran therapeutic
+              Before tech, I taught yoga and Pilates and ran therapeutic
               horseback riding programs. I still think about design the way I
-              think about movement – every small adjustment changes the whole
+              think about movement – every small adjustment influences the whole
               experience.
             </p>
           </FadeIn>
