@@ -539,6 +539,7 @@ body { background: var(--white); min-height: 100vh; }
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 48px 80px;
+  overflow: hidden;
 }
 .cs-back {
   display: inline-flex;
@@ -659,6 +660,8 @@ body { background: var(--white); min-height: 100vh; }
 
 .cs-image-wrap {
   margin: 32px 0;
+  max-width: 100%;
+  overflow: hidden;
 }
 .cs-image {
   width: 100%;
