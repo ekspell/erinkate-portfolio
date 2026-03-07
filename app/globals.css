@@ -619,7 +619,6 @@ body { background: var(--white); min-height: 100vh; }
   width: 100%;
   height: auto;
   border-radius: 4px;
-  box-shadow: 0 16px 48px -12px rgba(44, 36, 32, 0.12);
 }
 .cs-hero-image-mobile {
   max-width: 380px;
@@ -667,7 +666,6 @@ body { background: var(--white); min-height: 100vh; }
   width: 100%;
   height: auto;
   border-radius: 4px;
-  box-shadow: 0 8px 32px -8px rgba(44, 36, 32, 0.1);
 }
 .cs-image-caption {
   font-family: var(--font-sans);
