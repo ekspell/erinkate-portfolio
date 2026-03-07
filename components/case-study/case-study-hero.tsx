@@ -21,10 +21,12 @@ export function CaseStudyHero({ study, children, imageClassName, video }: { stud
             <span className="cs-meta-label">Timeline</span>
             <span className="cs-meta-value">{study.timeline}</span>
           </div>
-          <div className="cs-meta-item">
-            <span className="cs-meta-label">Team</span>
-            <span className="cs-meta-value">{study.team}</span>
-          </div>
+          {study.team && (
+            <div className="cs-meta-item">
+              <span className="cs-meta-label">Team</span>
+              <span className="cs-meta-value">{study.team}</span>
+            </div>
+          )}
           {study.platform && (
             <div className="cs-meta-item">
               <span className="cs-meta-label">Platform</span>

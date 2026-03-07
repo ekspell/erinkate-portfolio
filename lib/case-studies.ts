@@ -4,7 +4,7 @@ export interface CaseStudy {
   subtitle: string;
   role: string;
   timeline: string;
-  team: string;
+  team?: string;
   platform?: string;
   heroImage: string;
   heroImageAlt: string;
@@ -42,7 +42,6 @@ export const CASE_STUDIES: Record<string, CaseStudy> = {
       "Bringing real-world medical workflows into async telemedicine – so providers could practice digitally the way they practice in person.",
     role: "Senior Product Designer (Solo)",
     timeline: "2023",
-    team: "Solo",
     platform: "Web app (Provider-facing)",
     heroImage: "/work/cirrusmd/after.png",
     heroImageAlt:
