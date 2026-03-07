@@ -35,4 +35,17 @@ export const CASE_STUDIES: Record<string, CaseStudy> = {
     heroImage: "/work/publix/screen-home.jpg",
     heroImageAlt: "Publix Pharmacy redesigned home screen",
   },
+  cirrusmd: {
+    slug: "cirrusmd",
+    title: "The Digital Stacking Method",
+    subtitle:
+      "Bringing real-world medical workflows into async telemedicine – so providers could practice digitally the way they practice in person.",
+    role: "Senior Product Designer (Solo)",
+    timeline: "2023",
+    team: "Solo",
+    platform: "Web app (Provider-facing)",
+    heroImage: "/work/cirrusmd/after.png",
+    heroImageAlt:
+      "CirrusMD provider platform with Active Encounters and Incomplete Charts sections",
+  },
 };

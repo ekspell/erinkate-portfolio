@@ -932,6 +932,95 @@ body { background: var(--white); min-height: 100vh; }
   margin-top: 4px;
 }
 
+/* ── Case Study: Dark Section ── */
+.cs-dark {
+  background: var(--text);
+  color: var(--bg);
+  margin-left: -48px;
+  margin-right: -48px;
+  padding: 80px 48px;
+  border-radius: 4px;
+}
+.cs-dark .cs-section-title { color: rgba(242, 231, 228, 0.5); }
+.cs-dark .cs-section-rule { background: rgba(242, 231, 228, 0.15); }
+.cs-dark .cs-section-body p { color: rgba(242, 231, 228, 0.7); }
+.cs-dark .cs-metric-card {
+  border-color: rgba(242, 231, 228, 0.15);
+}
+.cs-dark .cs-metric-value { color: var(--bg); }
+.cs-dark .cs-metric-label { color: rgba(242, 231, 228, 0.5); }
+.cs-dark .cs-section { margin-bottom: 0; }
+
+/* ── Case Study: Insights List ── */
+.cs-insights {
+  margin: 32px 0;
+  display: grid;
+  gap: 0;
+}
+.cs-insight {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 12px;
+  align-items: baseline;
+}
+.cs-insight:first-child { border-top: 1px solid var(--border); }
+.cs-insight-num {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-style: italic;
+  color: var(--accent);
+}
+.cs-insight-text {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--text-soft);
+}
+
+/* ── Case Study: Horizontal Process ── */
+.cs-process-horizontal {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin: 32px 0;
+}
+.cs-process-h-step {
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+.cs-process-h-num {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-style: italic;
+  color: var(--border-strong);
+  margin-bottom: 12px;
+}
+.cs-process-h-title {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+.cs-process-h-desc {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--text-soft);
+}
+
+/* ── Case Study: Two-column images ── */
+.cs-two-col-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin: 32px 0;
+}
+.cs-two-col-images .cs-image-wrap { margin: 0; }
+
 /* ── Responsive ── */
 @media (max-width: 800px) {
   .hero-headline { font-size: 38px !important; line-height: 1.15 !important; }
@@ -960,4 +1049,7 @@ body { background: var(--white); min-height: 100vh; }
   .cs-process-step { grid-template-columns: 36px 1fr; }
   .cs-quote { font-size: 18px; padding-left: 16px; }
   .cs-screen-carousel img { height: 360px; }
+  .cs-process-horizontal { grid-template-columns: 1fr 1fr; }
+  .cs-two-col-images { grid-template-columns: 1fr; }
+  .cs-dark { margin-left: -20px; margin-right: -20px; padding: 48px 20px; }
 }

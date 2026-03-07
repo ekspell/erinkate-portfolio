@@ -40,7 +40,7 @@ export const PROJECTS: Project[] = [
       'Bringing real-world medical workflows into async telemedicine. Providers were juggling multiple patient charts with no system to manage the queue – leading to cognitive overload and slow onboarding. I designed a "chart basket" feature modeled on the physical stacking method doctors already use, reducing patient onboarding time by nearly 30%.',
     tags: ["Telehealth", "UX Research", "Provider Tools", "B2B"],
     metric: { value: "70s → 50s", label: "patient onboarding" },
-    url: "#",
+    url: "/work/cirrusmd",
     num: "03",
   },
 ];
