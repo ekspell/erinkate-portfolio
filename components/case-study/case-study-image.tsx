@@ -17,6 +17,7 @@ export function CaseStudyImage({
         width={1200}
         height={675}
         className="cs-image"
+        style={{ width: "100%", height: "auto" }}
       />
       {caption && <p className="cs-image-caption">{caption}</p>}
     </div>

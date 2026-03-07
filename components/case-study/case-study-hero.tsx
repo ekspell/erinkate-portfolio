@@ -53,6 +53,7 @@ export function CaseStudyHero({ study, children, imageClassName, video }: { stud
             width={1200}
             height={675}
             className={imageClassName ?? "cs-hero-image"}
+            style={{ width: "100%", height: "auto" }}
             priority
           />
         )}
