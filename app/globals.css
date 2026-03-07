@@ -1021,8 +1021,10 @@ body { background: var(--white); min-height: 100vh; }
   grid-template-columns: 1fr 1fr;
   gap: 32px;
   margin: 32px 0;
+  overflow: hidden;
 }
-.cs-two-col-images .cs-image-wrap { margin: 0; }
+.cs-two-col-images .cs-image-wrap { margin: 0; min-width: 0; }
+.cs-two-col-images .cs-image { width: 100%; height: auto; object-fit: contain; }
 
 /* ── Responsive ── */
 @media (max-width: 800px) {
